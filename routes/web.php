@@ -8,3 +8,5 @@ Route::get('/', function () {
 });
 
 Route::get('/home/{id}', [HiController::class, 'all']);
+Route::get('data', [HiController::class, 'show']);
+Route::post('data', [HiController::class, 'store'])->name('saveData');

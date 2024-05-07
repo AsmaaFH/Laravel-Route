@@ -14,4 +14,12 @@ class HiController extends Controller
         $posts = DB::table('posts')->find($id);
         return view('hello', compact('posts'));
     }
+
+    public function show(){
+        return view('signData');
+    }
+
+    public function store(){
+        echo "Hi From store Fun";
+    }
 }
